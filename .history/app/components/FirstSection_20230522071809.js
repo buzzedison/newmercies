@@ -1,5 +1,4 @@
-"use client";
-
+"use clinet";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -53,37 +52,37 @@ export default function Section() {
               <h2 className="text-4xl font-bold leading-tight text-orange-600">Core Values</h2>
             </div>
             <div className="mt-6">
-              <div className="border-t border-gray-300 pt-4">
+              <div
+                className={`border-t border-gray-300 pt-4 ${
+                  activeSection === 'service' ? 'bg-orange-100' : ''
+                }`}
+              >
                 <h3
-                  className={`flex items-center justify-between text-2xl font-bold text-gray-800 cursor-pointer ${
+                  className={`text-2xl font-bold text-gray-800 cursor-pointer ${
                     activeSection === 'service' ? 'text-orange-600' : ''
                   }`}
                   onClick={() => toggleSection('service')}
                 >
                   Service to all
-                  {activeSection === 'service' ? (
-                    <IoIosArrowUp className="ml-2" />
-                  ) : (
-                    <IoIosArrowDown className="ml-2" />
-                  )}
                 </h3>
                 {activeSection === 'service' && (
-                  <p className="text-gray-600 mt-2">We devote ourselves completely to those we serve and their needs.</p>
+                  <p className="text-gray-600 mt-2">
+                    We devote ourselves completely to those we serve and their needs.
+                  </p>
                 )}
               </div>
-              <div className="border-t border-gray-300 pt-4">
+              <div
+                className={`border-t border-gray-300 pt-4 ${
+                  activeSection === 'christlike' ? 'bg-orange-100' : ''
+                }`}
+              >
                 <h3
-                  className={`flex items-center justify-between text-2xl font-bold text-gray-800 cursor-pointer ${
+                  className={`text-2xl font-bold text-gray-800 cursor-pointer ${
                     activeSection === 'christlike' ? 'text-orange-600' : ''
                   }`}
                   onClick={() => toggleSection('christlike')}
                 >
                   Christ-like
-                  {activeSection === 'christlike' ? (
-                    <IoIosArrowUp className="ml-2" />
-                  ) : (
-                    <IoIosArrowDown className="ml-2" />
-                  )}
                 </h3>
                 {activeSection === 'christlike' && (
                   <p className="text-gray-600 mt-2">
@@ -91,19 +90,18 @@ export default function Section() {
                   </p>
                 )}
               </div>
-              <div className="border-t border-gray-300 pt-4">
+              <div
+                className={`border-t border-gray-300 pt-4 ${
+                  activeSection === 'respect' ? 'bg-orange-100' : ''
+                }`}
+              >
                 <h3
-                  className={`flex items-center justify-between text-2xl font-bold text-gray-800 cursor-pointer ${
+                  className={`text-2xl font-bold text-gray-800 cursor-pointer ${
                     activeSection === 'respect' ? 'text-orange-600' : ''
                   }`}
                   onClick={() => toggleSection('respect')}
                 >
                   Respect
-                  {activeSection === 'respect' ? (
-                    <IoIosArrowUp className="ml-2" />
-                  ) : (
-                    <IoIosArrowDown className="ml-2" />
-                  )}
                 </h3>
                 {activeSection === 'respect' && (
                   <p className="text-gray-600 mt-2">
@@ -111,37 +109,35 @@ export default function Section() {
                   </p>
                 )}
               </div>
-              <div className="border-t border-gray-300 pt-4">
+              <div
+                className={`border-t border-gray-300 pt-4 ${
+                  activeSection === 'listen' ? 'bg-orange-100' : ''
+                }`}
+              >
                 <h3
-                  className={`flex items-center justify-between text-2xl font-bold text-gray-800 cursor-pointer ${
+                  className={`text-2xl font-bold text-gray-800 cursor-pointer ${
                     activeSection === 'listen' ? 'text-orange-600' : ''
                   }`}
                   onClick={() => toggleSection('listen')}
                 >
                   Listen
-                  {activeSection === 'listen' ? (
-                    <IoIosArrowUp className="ml-2" />
-                  ) : (
-                    <IoIosArrowDown className="ml-2" />
-                  )}
                 </h3>
                 {activeSection === 'listen' && (
                   <p className="text-gray-600 mt-2">We pay close attention to each person and what they say to us.</p>
                 )}
               </div>
-              <div className="border-t border-gray-300 pt-4">
+              <div
+                className={`border-t border-gray-300 pt-4 ${
+                  activeSection === 'hospitality' ? 'bg-orange-100' : ''
+                }`}
+              >
                 <h3
-                  className={`flex items-center justify-between text-2xl font-bold text-gray-800 cursor-pointer ${
+                  className={`text-2xl font-bold text-gray-800 cursor-pointer ${
                     activeSection === 'hospitality' ? 'text-orange-600' : ''
                   }`}
                   onClick={() => toggleSection('hospitality')}
                 >
                   Hospitality
-                  {activeSection === 'hospitality' ? (
-                    <IoIosArrowUp className="ml-2" />
-                  ) : (
-                    <IoIosArrowDown className="ml-2" />
-                  )}
                 </h3>
                 {activeSection === 'hospitality' && (
                   <p className="text-gray-600 mt-2">
@@ -149,19 +145,18 @@ export default function Section() {
                   </p>
                 )}
               </div>
-              <div className="border-t border-gray-300 pt-4">
+              <div
+                className={`border-t border-gray-300 pt-4 ${
+                  activeSection === 'innovative' ? 'bg-orange-100' : ''
+                }`}
+              >
                 <h3
-                  className={`flex items-center justify-between text-2xl font-bold text-gray-800 cursor-pointer ${
+                  className={`text-2xl font-bold text-gray-800 cursor-pointer ${
                     activeSection === 'innovative' ? 'text-orange-600' : ''
                   }`}
                   onClick={() => toggleSection('innovative')}
                 >
                   Innovative
-                  {activeSection === 'innovative' ? (
-                    <IoIosArrowUp className="ml-2" />
-                  ) : (
-                    <IoIosArrowDown className="ml-2" />
-                  )}
                 </h3>
                 {activeSection === 'innovative' && (
                   <p className="text-gray-600 mt-2">

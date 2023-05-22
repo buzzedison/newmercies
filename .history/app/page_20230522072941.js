@@ -5,7 +5,6 @@ import SecondSection from './components/SecondSection'
 import Contact from './components/Contact'
 import EventPage from './components/Events'
 import TeamSection from './components/Team'
-import RetreatRooms from './components/Retreat'
 
 // import Hero2 from './components/Hero2'
 
@@ -16,7 +15,6 @@ export default function Home() {
 <Hero/>
 <SecondSection/>
 <Section/>
-<RetreatRooms/>
 <EventPage/>
 <TeamSection/>
 <Contact/>
