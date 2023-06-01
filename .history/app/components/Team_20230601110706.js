@@ -11,8 +11,8 @@ export default function TeamSection() {
           <div className="relative">
             <Image
               src="/image/founder.png"
-            
-              width={400}
+              fill="cover"
+              // width={400}
               height={450}
               className="rounded-t-lg"
               alt="Founder Image"

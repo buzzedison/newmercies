@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 import Hero from './components/Hero'
 import Section from './components/FirstSection'
 import SecondSection from './components/SecondSection'

@@ -42,7 +42,7 @@ export default function Hero() {
 
         <SwiperSlide>
           <div className="carousel-item w-full h-screen">
-            <Image src="/image/luxury.png" 
+            <Image src="/image/suite.jpg" 
            fill="cover" objectFit="cover" className="z-10" />
             <div className="absolute inset-0 bg-black bg-opacity-50 z-20"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-30">

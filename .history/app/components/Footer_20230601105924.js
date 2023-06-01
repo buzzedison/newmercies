@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-orange-600 text-white py-11">
       <div className="container mx-auto px-8 md:flex justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
-          <h3 className="font-bold text-2xl mb-2 pt-4">New Mercies Retreat Center</h3>
+          <h3 className="font-bold text-2xl mb-2">New Mercies Retreat Center</h3>
           <p className="mb-1">Nmai Dzorn Papafio Hills Rd, Ghana</p>
           <p>+233244631905</p>
         </div>

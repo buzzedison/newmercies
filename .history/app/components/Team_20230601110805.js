@@ -8,7 +8,7 @@ export default function TeamSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
         <div className="bg-white rounded-lg shadow-lg h-full overflow-hidden transform transition-all hover:scale-105">
-          <div className="relative">
+          <div className="relative align-center">
             <Image
               src="/image/founder.png"
             

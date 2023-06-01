@@ -14,7 +14,7 @@ export default function TeamSection() {
             
               width={400}
               height={450}
-              className="rounded-t-lg"
+              className="rounded-t-lg p-6"
               alt="Founder Image"
             />
           </div>

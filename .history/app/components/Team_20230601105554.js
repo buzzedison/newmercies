@@ -6,12 +6,11 @@ export default function TeamSection() {
       <div className="text-center">
         <h2 className="text-4xl font-bold leading-tight text-orange-600">Our Team</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
         <div className="bg-white rounded-lg shadow-lg h-full overflow-hidden transform transition-all hover:scale-105">
           <div className="relative">
             <Image
               src="/image/founder.png"
-            
               width={400}
               height={450}
               className="rounded-t-lg"
