@@ -5,32 +5,32 @@ import { useState } from 'react';
 export default function ConferenceRooms() {
   const rooms = [
     {
-      name: "Conference Room 1 (1st Floor)",
+      name: "Conference Room 1 (Ground Floor)",
       price: "GHc 707",
       description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
       image: "/image/Conference1st room.jpeg"
     },
     {
-      name: "Conference Room 2 (Second Floor)",
+      name: "Conference Room 2 (Ground Floor)",
       price: "GHc 707",
       description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/Conferenceroomsecond.jpeg"
+      image: "/image/Conferenceroom2.png"
     },
     {
-      name: "Conference Room 3 (Third Floor)",
+      name: "Conference Room 3 (First Floor)",
       price: "GHc 807",
       description: "This larger space is perfect for larger gatherings and can accommodate about 80 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector"],
       image: "/image/Conference1st room.jpeg"
     },
     {
-      name: "Conference Room 4 (Fourth Floor)",
+      name: "Conference Room 4 (Second Floor)",
       price: "GHc 907",
       description: "Our largest space, ideal for events and presentations, can accommodate about 100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector", "PA System"],
-      image: "/image/Conferenceroomsecond.jpeg"
+      image: "/image/conferenceroom4.png"
     },
     // ... more rooms ...
   ];
@@ -42,7 +42,7 @@ export default function ConferenceRooms() {
      <div className="text-center">
        <h2 className="text-4xl font-bold leading-tight text-orange-600">Conference Rooms</h2>
      </div>
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mt-12">
+     <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
        {rooms.map((room, index) => (
          <div 
            key={index} 
