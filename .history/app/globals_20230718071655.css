@@ -19,7 +19,16 @@
 body {
 
   /* For mobile */
+.mobile-menu-button:focus .mobile-menu {
+  display: none;
+}
 
+/* For desktop */
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
 
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
