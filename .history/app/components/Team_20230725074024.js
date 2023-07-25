@@ -23,7 +23,7 @@ export default function TeamSection() {
           <div className="p-6">
             <h3 className="text-xl font-bold">Founder</h3>
             <p className="text-gray-600 mt-4">
-            Jesus is the founder of New mercies Christian retreat center Brother Oswald Osei Agyemang is his servant. Brother Oswald Osei Agyemang is a devout follower of Jesus Christ, whose unwavering faith and commitment to
+              Brother Oswald Osei Agyemang is a devout follower of Jesus Christ, whose unwavering faith and commitment to
               Christian values have guided every aspect of New Mercies Christian Retreat Center. With a deep understanding
               of the transformative power of God's grace, Brother Oswald crafted an environment that fosters spiritual
               nourishment, personal healing, and a profound encounter with God.

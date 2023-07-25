@@ -27,7 +27,7 @@ export default function RetreatRooms() {
     },
     {
       title: 'Executive Suite',
-      image: '/image/executivesuite.jpeg',
+      image: '/image/suite3.jpg',
       description:
         'The executive room has a view and a roofed, open-air gallery and a queen-sized bedroom that can accommodate two people. There is a lounge area, A.C, Fan wardrobe, an ensuite bathroom with heater, TV, dressing table mirror with chair and a mini fridge.',
       price: 'GHc730 / Costs Per Night',

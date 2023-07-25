@@ -40,8 +40,6 @@ export default function Section() {
             <br />
             A very warm welcome awaits your visit.
           </p>
-
-          <p className="text-lg mt-2 font-bold">Isaiah 55:8: “For my thoughts are not your thoughts, neither are your ways my ways,” declares the Lord.</p>
           <Link
             href="#contact"
             className="inline-flex items-center justify-center px-5 py-3 mt-8 text-white bg-black hover:bg-orange-600 rounded-lg shadow-md transition-colors duration-300"

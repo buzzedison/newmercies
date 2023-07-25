@@ -5,8 +5,7 @@ export default function TeamSection() {
     <div className="container mx-auto my-20 px-4 md:px-12" id="team">
       <div className="text-center">
         <h2 className="text-4xl font-bold leading-tight text-orange-600">Our Team</h2>
-        <p className="font-md "><i>It is of the LORD's mercies that we are not consumed Because his compassions fail not.<br/> They are new every morning: Great is thy faithfulness. <br/>
-        <span className="text-orange-600 font-bold mt-2 text-lg">Lamentations 3:22-23</span></i></p>
+        <p>It is of the LORD's mercies that we are not consumed Because his compassions fail not. They are new every morning: Great is thy faithfulness. Lamentations 3:22-23</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
         <div className="bg-white rounded-lg shadow-lg h-full overflow-hidden transform transition-all hover:scale-105">
@@ -23,7 +22,7 @@ export default function TeamSection() {
           <div className="p-6">
             <h3 className="text-xl font-bold">Founder</h3>
             <p className="text-gray-600 mt-4">
-            Jesus is the founder of New mercies Christian retreat center Brother Oswald Osei Agyemang is his servant. Brother Oswald Osei Agyemang is a devout follower of Jesus Christ, whose unwavering faith and commitment to
+              Brother Oswald Osei Agyemang is a devout follower of Jesus Christ, whose unwavering faith and commitment to
               Christian values have guided every aspect of New Mercies Christian Retreat Center. With a deep understanding
               of the transformative power of God's grace, Brother Oswald crafted an environment that fosters spiritual
               nourishment, personal healing, and a profound encounter with God.

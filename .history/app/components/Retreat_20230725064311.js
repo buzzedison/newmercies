@@ -6,7 +6,7 @@ export default function RetreatRooms() {
   const retreatRooms = [
     {
       title: 'Mini Suite',
-      image: '/image/minisuite.png',
+      image: '/image/minisuite.jpg',
       description:
         'Our mini suites provide a view with a roofed, open-air gallery with standard bedrooms intended for single occupancy, a queen bed, with lounge space, wardrobe, Fan, an ensuite bathroom with heater, TV, A.C., dressing table mirror with a chair.',
       price: 'GHc365 / Costs Per Night',
@@ -27,7 +27,7 @@ export default function RetreatRooms() {
     },
     {
       title: 'Executive Suite',
-      image: '/image/executivesuite.jpeg',
+      image: '/image/suite3.jpg',
       description:
         'The executive room has a view and a roofed, open-air gallery and a queen-sized bedroom that can accommodate two people. There is a lounge area, A.C, Fan wardrobe, an ensuite bathroom with heater, TV, dressing table mirror with chair and a mini fridge.',
       price: 'GHc730 / Costs Per Night',
