@@ -19,8 +19,8 @@ export default function Contact() {
   };
 
   return (
-    <div className=" bg-orange-50 ">
-    <div className="container py-10 mx-auto my-20 px-4 md:px-12">
+    <div className="" id="contact">
+    <div className="container py-12 mx-auto my-20 px-4 md:px-12">
       <h2 className="text-4xl font-bold leading-tight text-center mb-10">Contact Us</h2>
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 pr-5 pl-12 mb-10 md:mb-0">
@@ -69,10 +69,11 @@ export default function Contact() {
         <div className="w-full h-full md:w-1/2 pl-10">
           <iframe
             title="Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434810424!2d144.9537353158766!3d-37.817209979751984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1637520666206!5m2!1sen!2s"
+            src="https://www.google.com/maps/dir/5.6773488,-0.1214326/new+mercies/@5.678944,-0.1237659,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xfdf832834bc8771:0xbfb3daa9faaba6a4!2m2!1d-0.1217413!2d5.6807695?entry=tts&shorturl=1"
             className="w-full h-64 rounded-lg shadow-md"
             allowFullScreen=""
             loading="lazy"
+       
             ></iframe>
             </div>
             </div>

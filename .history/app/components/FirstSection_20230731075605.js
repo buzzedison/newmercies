@@ -31,7 +31,7 @@ export default function Section() {
             <span className=" text-lg font-bold mt-4 py-4">
             "Seek the Lord while He may be found; call on Him while He is near. Let the wicked forsake their ways and the unrighteous their thoughts. Let them turn to the Lord,
              and he will have mercy on them, and to our God, for he will freely pardon.
-            </span> <p className="pt-4">
+            </span> <p>
             We strive to provide a welcoming environment to Christians, helping them to discern, experience, and
             contemplate God in all things. Christians, in our experience, ought to dedicate themselves to a time for
             prayer. </p>

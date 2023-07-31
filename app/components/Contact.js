@@ -69,7 +69,8 @@ export default function Contact() {
         <div className="w-full h-full md:w-1/2 pl-10">
           <iframe
             title="Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2175262868614!2d-0.1230721252142926!3d5.681668094299944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf831b66546d03%3A0xe1706ba3d56d6c0c!2sAction%20chapel-%20Nmai%20Dzorn!5e0!3m2!1sen!2sus!4v1684317009081!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3315.4950395118435!2d-0.12374824208910397!3d5.679191414431082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1690804889478!5m2!1sen!2sus"
+
             className="w-full h-64 rounded-lg shadow-md"
             allowFullScreen=""
             loading="lazy"

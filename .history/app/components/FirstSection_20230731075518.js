@@ -31,7 +31,7 @@ export default function Section() {
             <span className=" text-lg font-bold mt-4 py-4">
             "Seek the Lord while He may be found; call on Him while He is near. Let the wicked forsake their ways and the unrighteous their thoughts. Let them turn to the Lord,
              and he will have mercy on them, and to our God, for he will freely pardon.
-            </span> <p className="pt-4">
+            </span> <p>
             We strive to provide a welcoming environment to Christians, helping them to discern, experience, and
             contemplate God in all things. Christians, in our experience, ought to dedicate themselves to a time for
             prayer. </p>
@@ -42,7 +42,7 @@ export default function Section() {
             A very warm welcome awaits your visit.
           </p>
 
-          
+          <p className="text-lg mt-2 font-bold">Isaiah 55:8: “For my thoughts are not your thoughts, neither are your ways my ways,” declares the Lord.</p>
           <Link
             href="#contact"
             className="inline-flex items-center justify-center px-5 py-3 mt-8 text-white bg-black hover:bg-orange-600 rounded-lg shadow-md transition-colors duration-300"

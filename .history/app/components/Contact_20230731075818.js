@@ -19,7 +19,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="">
+    <div className="" id="contact">
     <div className="container py-12 mx-auto my-20 px-4 md:px-12">
       <h2 className="text-4xl font-bold leading-tight text-center mb-10">Contact Us</h2>
       <div className="flex flex-col md:flex-row">

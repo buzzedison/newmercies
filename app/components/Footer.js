@@ -1,5 +1,5 @@
 "use client"
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -11,18 +11,14 @@ export default function Footer() {
           <p>+233244631905</p>
         </div>
         <div className="flex justify-center md:justify-end space-x-4">
-          <a href="#" className="text-white hover:text-orange-400">
-            <FaTwitter size={24} />
-          </a>
-          <a href="#" className="text-white hover:text-orange-400">
+          
+          <a href="https://www.facebook.com/NewMerciesChristianRetreatCenter?mibextid=LQQJ4d" className="text-white hover:text-orange-400">
             <FaFacebook size={24} />
           </a>
-          <a href="#" className="text-white hover:text-orange-400">
+          <a href="https://instagram.com/new_mercies_retreat_center?igshid=MzRlODBiNWFlZA==" className="text-white hover:text-orange-400">
             <FaInstagram size={24} />
           </a>
-          <a href="#" className="text-white hover:text-orange-400">
-            <FaLinkedin size={24} />
-          </a>
+          
         </div>
       </div>
       <div className="border-t border-white mt-4 pt-4 container mx-auto px-8 md:flex justify-between items-center">
