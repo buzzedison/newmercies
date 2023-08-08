@@ -25,14 +25,14 @@ const [submitStatus, setSubmitStatus] = useState(null);
         setSubmitStatus('success');
       } else {
         setSubmitStatus('error');
-        console.error('Error status:', response.status, response.data);
       }
     } catch (error) {
       setSubmitStatus('error');
-      console.error('Error:', error);
     } finally {
       setSubmitting(false);
     }
+
+    // Handle form submission here
   };
 
   return (

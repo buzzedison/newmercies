@@ -25,14 +25,14 @@ const [submitStatus, setSubmitStatus] = useState(null);
         setSubmitStatus('success');
       } else {
         setSubmitStatus('error');
-        console.error('Error status:', response.status, response.data);
       }
     } catch (error) {
       setSubmitStatus('error');
-      console.error('Error:', error);
     } finally {
       setSubmitting(false);
     }
+
+    // Handle form submission here
   };
 
   return (
@@ -82,9 +82,6 @@ const [submitStatus, setSubmitStatus] = useState(null);
               Send Message
             </button>
           </form>
-          {submitting && <p>Submitting...</p>}
-{submitStatus === 'success' && <p>Message sent successfully!</p>}
-{submitStatus === 'error' && <p>Error sending message. Please try again.</p>}
         </div>
         <div className="w-full h-full md:w-1/2 pl-10">
           <iframe

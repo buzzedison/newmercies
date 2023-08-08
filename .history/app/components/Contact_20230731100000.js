@@ -3,9 +3,6 @@ import axios from 'axios';
 import { useState } from 'react';
 
 export default function Contact() {
-
-  const [submitting, setSubmitting] = useState(false);
-const [submitStatus, setSubmitStatus] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,21 +15,18 @@ const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true);
     try {
-      const response = await axios.post('/api/sendmail/route', formData);
+      const response = await axios.post('/api/sendmail', formData);
       if (response.status === 200) {
-        setSubmitStatus('success');
+        // Show success message
       } else {
-        setSubmitStatus('error');
-        console.error('Error status:', response.status, response.data);
+        // Show error message
       }
     } catch (error) {
-      setSubmitStatus('error');
-      console.error('Error:', error);
-    } finally {
-      setSubmitting(false);
+      // Show error message
     }
+  
+    // Handle form submission here
   };
 
   return (
@@ -82,9 +76,6 @@ const [submitStatus, setSubmitStatus] = useState(null);
               Send Message
             </button>
           </form>
-          {submitting && <p>Submitting...</p>}
-{submitStatus === 'success' && <p>Message sent successfully!</p>}
-{submitStatus === 'error' && <p>Error sending message. Please try again.</p>}
         </div>
         <div className="w-full h-full md:w-1/2 pl-10">
           <iframe
