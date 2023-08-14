@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 export default function ImageGallery() {
-  const images = ["/image/suite.jpg", "/image/suite2.jpg", "/image/suite3.jpg", "/image/standard suite.jpeg", "/image/suite5.jpg"]; // replace with your image paths
+  const images = ["/image/suite.jpg", "/image/suite2.jpg", "/image/suite3.png", "/image/standard suite.jpeg", "/image/suite5.jpg"]; // replace with your image paths
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (

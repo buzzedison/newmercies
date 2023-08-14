@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black bg-opacity-50 z-20"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-30">
               <h1 className="text-5xl font-bold text-white leading-tight md:text-7xl">
-              New Mercies
+              New Mercies Christian
             Retreat Centre
               </h1>
               <p className="text-xl mt-6 font-light text-gray-200 max-w-lg mx-auto">

@@ -1,39 +1,53 @@
 "use client";
-import axios from 'axios';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 import { useState } from 'react';
 
+
+
+const validationSchema = Yup.object({
+  fullName: Yup.string().required('Required'),
+  email: Yup.string().email('Invalid email address').required('Required'),
+  message: Yup.string().required('Required'),
+});
 export default function Contact() {
+ 
 
   const [submitting, setSubmitting] = useState(false);
-const [submitStatus, setSubmitStatus] = useState(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+    const [messageSent, setMessageSent] = useState(false);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    try {
-      const response = await axios.post('/api/sendmail/route', formData);
-      if (response.status === 200) {
-        setSubmitStatus('success');
-      } else {
-        setSubmitStatus('error');
-        console.error('Error status:', response.status, response.data);
+    
+  
+  
+    const handleSubmit = async (values) => {
+      console.log('Form values:', values);
+      setSubmitting(true);
+      try {
+        let response = await fetch("/api/sendmail", {
+          method: "POST",
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ ...values }), // Include all form values
+        });
+    
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+    
+        await response.json();
+        setMessageSent(true);
+      } catch (error) {
+        console.error(error.message);
       }
-    } catch (error) {
-      setSubmitStatus('error');
-      console.error('Error:', error);
-    } finally {
+    
       setSubmitting(false);
     }
-  };
+  
+  
+
+  
 
   return (
     <div className="" id="contact">
@@ -41,50 +55,60 @@ const [submitStatus, setSubmitStatus] = useState(null);
       <h2 className="text-4xl font-bold leading-tight text-center mb-10">Contact Us</h2>
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 pr-5 pl-12 mb-10 md:mb-0">
-          <form onSubmit={handleSubmit}>
+        <Formik
+        initialValues={{ fullName: '', email: '', message: '' }}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}
+      >
+          
+          <Form>
             <div className="mb-6">
               <label htmlFor="name" className="block mb-2 text-sm font-bold">Name</label>
-              <input
+              <Field 
+              placeholder="Your Name"
                 type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
+                id="fullName"
+                name="fullName"
+             
                 className="w-full px-3 py-2 text-gray-700 bg-gray-200 rounded"
                 required
               />
+              <ErrorMessage name="fullName" component="div" className="text-red-500 mt-1 text-sm" />
             </div>
             <div className="mb-6">
               <label htmlFor="email" className="block mb-2 text-sm font-bold">Email</label>
-              <input
+              <Field
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+              
                 className="w-full px-3 py-2 text-gray-700 bg-gray-200 rounded"
                 required
               />
+              <ErrorMessage name="email" component="div" className="text-red-500 mt-1 text-sm" />
             </div>
             <div className="mb-6">
               <label htmlFor="message" className="block mb-2 text-sm font-bold">Message</label>
-              <textarea
+              <Field 
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
+              as="textarea"
                 rows="6"
                 className="w-full px-3 py-2 text-gray-700 bg-gray-200 rounded resize-none"
                 required
-              ></textarea>
+              />
+              <ErrorMessage name="message" component="div" className="text-red-500 mt-1 text-sm" />
             </div>
-            <button type="submit" className="px-5 py-3 text-white bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition-colors duration-300">
-              Send Message
+            <button type="submit" disabled={submitting}className="px-5 py-3 text-white bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition-colors duration-300">
+            {submitting ? "Sending..." : "Send Message"}
             </button>
-          </form>
-          {submitting && <p>Submitting...</p>}
-{submitStatus === 'success' && <p>Message sent successfully!</p>}
-{submitStatus === 'error' && <p>Error sending message. Please try again.</p>}
+
+
+            {messageSent && <p>Message sent successfully!</p>}
+          </Form>
+          </Formik>
+
+
         </div>
         <div className="w-full h-full md:w-1/2 pl-10">
           <iframe
@@ -101,6 +125,6 @@ const [submitStatus, setSubmitStatus] = useState(null);
             </div>
             </div>
             );
-            }
-            
+  }
+   
             

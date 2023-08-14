@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h3 className="font-bold text-2xl mb-2 pt-4">New Mercies Retreat Center</h3>
           <p className="mb-1">Nmai Dzorn Papafio Hills Rd, Ghana</p>
-          <p>+233244631905</p>
+          <p>+233(0)256489960</p>
         </div>
         <div className="flex justify-center md:justify-end space-x-4">
           
