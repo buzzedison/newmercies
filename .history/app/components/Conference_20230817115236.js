@@ -16,7 +16,7 @@ export default function ConferenceRooms() {
       price: "GHC 1515/per hour",
       description: "This small, intimate space is designed to serve various purposes and can accommodate 120 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/Conference Hall2.jpg"
+      image: "/image/conferencehall4.jpg"
     },
     {
       name: "Conference Hall 3 (First Floor) ",

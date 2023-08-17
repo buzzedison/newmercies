@@ -5,29 +5,29 @@ import { useState } from 'react';
 export default function ConferenceRooms() {
   const rooms = [
     {
-      name: "Conference Room 1 (Ground Floor)",
-      price: "GHc 707",
-      description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
+      name: "Conference Hall 1 (Ground Floor)",
+      price: "GHc 1010",
+      description: "This small, intimate space is designed to serve various purposes and can accommodate 80 -100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
       image: "/image/Conference1st room.jpeg"
     },
     {
       name: "Conference Room 2 (Ground Floor)",
-      price: "GHc 707",
-      description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
+      price: "GHc 1515",
+      description: "This small, intimate space is designed to serve various purposes and can accommodate 80-100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/Conferenceroom2.png"
+      image: "/image/conferenceroom2.png"
     },
     {
       name: "Conference Room 3 (First Floor)",
-      price: "GHc 807",
+      price: "GHc 707",
       description: "This larger space is perfect for larger gatherings and can accommodate about 80 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector"],
-      image: "/image/Conference1st room.jpeg"
+      image: "/image/conferenceroom3.png"
     },
     {
       name: "Conference Room 4 (Second Floor)",
-      price: "GHc 907",
+      price: "GHc 707",
       description: "Our largest space, ideal for events and presentations, can accommodate about 100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector", "PA System"],
       image: "/image/conferenceroom4.png"
@@ -40,7 +40,7 @@ export default function ConferenceRooms() {
  return (
    <div className="container mx-auto my-20 px-4 md:px-12" id="conference-rooms">
      <div className="text-center">
-       <h2 className="text-4xl font-bold leading-tight text-orange-600">Conference Rooms</h2>
+       <h2 className="text-4xl font-bold leading-tight text-orange-600">Conference Halls</h2>
      </div>
      <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
        {rooms.map((room, index) => (

@@ -5,32 +5,32 @@ import { useState } from 'react';
 export default function ConferenceRooms() {
   const rooms = [
     {
-      name: "Conference Hall 1 (Ground Floor)",
-      price: "GHC 1010/per hour",
-      description: "This small, intimate space is designed to serve various purposes and can accommodate 80 -100 people.",
+      name: "Conference Room 1 (Ground Floor)",
+      price: "GHc 1010",
+      description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/1stfloorConference room.jpeg"
+      image: "/image/Conference1st room.jpeg"
     },
     {
-      name: "Conference Hall 2 (Ground Floor)",
-      price: "GHC 1515/per hour",
-      description: "This small, intimate space is designed to serve various purposes and can accommodate 120 people.",
+      name: "Conference Room 2 (Ground Floor)",
+      price: "GHc 1515",
+      description: "This small, intimate space is designed to serve various purposes and can accommodate 80-100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/Conference Hall2.jpg"
+      image: "/image/conferenceroom2.png"
     },
     {
-      name: "Conference Hall 3 (First Floor) ",
-      price: "GHc 707/per hour",
-      description: "This larger space is perfect for larger gatherings and can accommodate about 50 people.",
+      name: "Conference Room 3 (First Floor)",
+      price: "GHc 707",
+      description: "This larger space is perfect for larger gatherings and can accommodate about 80 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector"],
-      image: "/image/conferenceroom3.jpg"
+      image: "/image/conferenceroom3.png"
     },
     {
-      name: "Conference Hall 4 (Second Floor) ",
-      price: "GHc 707/per hour",
-      description: "Our largest space, ideal for events and presentations, can accommodate about 50 people.",
+      name: "Conference Room 4 (Second Floor)",
+      price: "GHc 707",
+      description: "Our largest space, ideal for events and presentations, can accommodate about 100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector", "PA System"],
-      image: "/image/conferencehall4.jpg"
+      image: "/image/conferenceroom4.png"
     },
     // ... more rooms ...
   ];

@@ -9,14 +9,14 @@ export default function ConferenceRooms() {
       price: "GHC 1010/per hour",
       description: "This small, intimate space is designed to serve various purposes and can accommodate 80 -100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/1stfloorConference room.jpeg"
+      image: "/image/Conference1st room.jpeg"
     },
     {
       name: "Conference Hall 2 (Ground Floor)",
       price: "GHC 1515/per hour",
       description: "This small, intimate space is designed to serve various purposes and can accommodate 120 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
-      image: "/image/Conference Hall2.jpg"
+      image: "/image/conferenceroom2.png"
     },
     {
       name: "Conference Hall 3 (First Floor) ",
@@ -30,7 +30,7 @@ export default function ConferenceRooms() {
       price: "GHc 707/per hour",
       description: "Our largest space, ideal for events and presentations, can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector", "PA System"],
-      image: "/image/conferencehall4.jpg"
+      image: "/image/conferenceroom4.png"
     },
     // ... more rooms ...
   ];
