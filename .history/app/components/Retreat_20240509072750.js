@@ -9,28 +9,28 @@ export default function RetreatRooms() {
       image: '/image/suite.jpg',
       description:
         'Our mini suites provide a view with a roofed, open-air gallery with standard bedrooms intended for single occupancy, a queen bed, with lounge space, wardrobe, Fan, an ensuite bathroom with heater, TV, A.C., dressing table mirror with a chair.',
-      price: 'GHc365 / Costs Per Night',
+      price: 'GHc405 / Costs Per Night',
     },
     {
       title: 'Standard Suite',
-      image: '/image/suite2.jpg',
+      image: '/image/standard suite.jpeg',
       description:
         'Our standard suites feature compact bedrooms ideal for single occupancy, a lounge space, a wardrobe, an ensuite bathroom with a heater, and a mini fridge, A.C., Fan, TV, and dressing table mirror with a chair.',
-      price: 'GHc430 / Costs Per Night',
+      price: 'GHc488 / Costs Per Night',
     },
     {
       title: 'Masters Suite',
-      image: '/image/suite3.jpg',
+      image: '/image/suite2.jpg',
       description:
         'The master suite has a queen-sized bedroom that can accommodate two people. There is a seating area, ample storage, a mini fridge, A.C., Fan, an ensuite bathroom with a heater, TV, dressing table mirror with a chair.',
-      price: 'GHc610 / Costs Per Night',
+      price: 'GHc675 / Costs Per Night',
     },
     {
       title: 'Executive Suite',
-      image: '/image/suite4.jpg',
+      image: '/image/suite3.jpg',
       description:
         'The executive room has a view and a roofed, open-air gallery and a queen-sized bedroom that can accommodate two people. There is a lounge area, A.C, Fan wardrobe, an ensuite bathroom with heater, TV, dressing table mirror with chair and a mini fridge.',
-      price: 'GHc730 / Costs Per Night',
+      price: 'GHc808 / Costs Per Night',
     },
   ];
 
@@ -39,11 +39,11 @@ export default function RetreatRooms() {
       <div className="text-center">
         <h2 className="text-4xl font-bold leading-tight text-orange-600">Retreat Rooms</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mt-12">
         {retreatRooms.map((room, index) => (
           <motion.div
             key={index}
-            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 hover:bg-gray-700 transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -60,7 +60,12 @@ export default function RetreatRooms() {
             <div className="p-6">
               <h3 className="text-xl font-bold text-orange-600">{room.title}</h3>
               <p className="text-gray-300 mt-4">{room.description}</p>
-              <div className="mt-6 text-orange-600 font-bold">{room.price}</div>
+              <div className="mt-6">
+                <div className="text-orange-600 font-bold">{room.price}</div>
+                <button className="mt-4 px-4 py-2 bg-orange-600 text-gray-100 rounded-md hover:bg-orange-700 transition-colors duration-300">
+                  Book Now
+                </button>
+              </div>
             </div>
           </motion.div>
         ))}

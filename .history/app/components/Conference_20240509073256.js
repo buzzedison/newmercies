@@ -6,14 +6,14 @@ export default function ConferenceRooms() {
   const rooms = [
     {
       name: "Conference Room 1 (1st Floor)",
-      price: "GHc 707",
+      price: "GHc 1000 (3hrs) GHc 1800 (6hrs)",
       description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
       image: "/image/Conference1st room.jpeg"
     },
     {
       name: "Conference Room 2 (Second Floor)",
-      price: "GHc 707",
+      price: "GHc 1000 (3hrs) GHc 1800 (6hrs)",
       description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
       image: "/image/Conferenceroomsecond.jpeg"
@@ -42,7 +42,7 @@ export default function ConferenceRooms() {
      <div className="text-center">
        <h2 className="text-4xl font-bold leading-tight text-orange-600">Conference Rooms</h2>
      </div>
-     <div className="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+     <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
        {rooms.map((room, index) => (
          <div 
            key={index} 

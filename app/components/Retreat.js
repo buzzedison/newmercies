@@ -9,28 +9,28 @@ export default function RetreatRooms() {
       image: '/image/suite.jpg',
       description:
         'Our mini suites provide a view with a roofed, open-air gallery with standard bedrooms intended for single occupancy, a queen bed, with lounge space, wardrobe, Fan, an ensuite bathroom with heater, TV, A.C., dressing table mirror with a chair.',
-      price: 'GHc365 / Costs Per Night',
+      price: 'GHc405 / Costs Per Night',
     },
     {
       title: 'Standard Suite',
       image: '/image/standard suite.jpeg',
       description:
         'Our standard suites feature compact bedrooms ideal for single occupancy, a lounge space, a wardrobe, an ensuite bathroom with a heater, and a mini fridge, A.C., Fan, TV, and dressing table mirror with a chair.',
-      price: 'GHc430 / Costs Per Night',
+      price: 'GHc488 / Costs Per Night',
     },
     {
       title: 'Masters Suite',
       image: '/image/suite2.jpg',
       description:
         'The master suite has a queen-sized bedroom that can accommodate two people. There is a seating area, ample storage, a mini fridge, A.C., Fan, an ensuite bathroom with a heater, TV, dressing table mirror with a chair.',
-      price: 'GHc610 / Costs Per Night',
+      price: 'GHc675 / Costs Per Night',
     },
     {
       title: 'Executive Suite',
       image: '/image/suite3.jpg',
       description:
         'The executive room has a view and a roofed, open-air gallery and a queen-sized bedroom that can accommodate two people. There is a lounge area, A.C, Fan wardrobe, an ensuite bathroom with heater, TV, dressing table mirror with chair and a mini fridge.',
-      price: 'GHc730 / Costs Per Night',
+      price: 'GHc808 / Costs Per Night',
     },
   ];
 
