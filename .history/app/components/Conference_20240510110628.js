@@ -19,7 +19,7 @@ export default function ConferenceRooms() {
       image: "/image/Conferenceroomsecond.jpeg"
     },
     {
-      name: "Conference Room 1 (Ground Floor)",
+      name: "Conference Room 3 (Third Floor)",
       price: "GHc 1500 (3hrs) GHc 2500 (6hrs)",
       description: "This larger space is perfect for larger gatherings and can accommodate about 80 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector"],

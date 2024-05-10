@@ -15,21 +15,21 @@ export default function RetreatRooms() {
       title: 'Standard Suite',
       image: '/image/standard suite.jpeg',
       description:
-        'Our standard suites feature compact bedrooms ideal for single occupancy, a lounge space, a wardrobe, an ensuite bathroom with a heater, and a mini fridge, A.C., Fan, TV, and dressing table mirror with a chair. Check out is at 12pm the next day',
+        'Our standard suites feature compact bedrooms ideal for single occupancy, a lounge space, a wardrobe, an ensuite bathroom with a heater, and a mini fridge, A.C., Fan, TV, and dressing table mirror with a chair.Check out is at 12pm the next day',
       price: 'GHc488 / Costs Per Night',
     },
     {
       title: 'Masters Suite',
       image: '/image/suite2.jpg',
       description:
-        'The master suite has a queen-sized bedroom that can accommodate two people. There is a seating area, ample storage, a mini fridge, A.C., Fan, an ensuite bathroom with a heater, TV, dressing table mirror with a chair. Check out is at 12pm the next day',
+        'The master suite has a queen-sized bedroom that can accommodate two people. There is a seating area, ample storage, a mini fridge, A.C., Fan, an ensuite bathroom with a heater, TV, dressing table mirror with a chair.',
       price: 'GHc675 / Costs Per Night',
     },
     {
       title: 'Executive Suite',
       image: '/image/suite3.jpg',
       description:
-        'The executive room has a view and a roofed, open-air gallery and a queen-sized bedroom that can accommodate two people. There is a lounge area, A.C, Fan wardrobe, an ensuite bathroom with heater, TV, dressing table mirror with chair and a mini fridge. Check out is at 12pm the next day',
+        'The executive room has a view and a roofed, open-air gallery and a queen-sized bedroom that can accommodate two people. There is a lounge area, A.C, Fan wardrobe, an ensuite bathroom with heater, TV, dressing table mirror with chair and a mini fridge.Check out is at 12pm the next day',
       price: 'GHc808 / Costs Per Night',
     },
   ];

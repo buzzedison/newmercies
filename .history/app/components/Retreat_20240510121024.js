@@ -15,7 +15,7 @@ export default function RetreatRooms() {
       title: 'Standard Suite',
       image: '/image/standard suite.jpeg',
       description:
-        'Our standard suites feature compact bedrooms ideal for single occupancy, a lounge space, a wardrobe, an ensuite bathroom with a heater, and a mini fridge, A.C., Fan, TV, and dressing table mirror with a chair. Check out is at 12pm the next day',
+        'Our standard suites feature compact bedrooms ideal for single occupancy, a lounge space, a wardrobe, an ensuite bathroom with a heater, and a mini fridge, A.C., Fan, TV, and dressing table mirror with a chair.Check out is at 12pm the next day',
       price: 'GHc488 / Costs Per Night',
     },
     {

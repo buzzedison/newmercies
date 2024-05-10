@@ -7,10 +7,11 @@ export default function TeamSection() {
         <h2 className="text-4xl font-bold leading-tight text-orange-600">Our Team</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+        <div className="bg-white rounded-lg shadow-lg h-full overflow-hidden transform transition-all hover:scale-105">
           <div className="relative">
             <Image
-              src="/image/founder.jpg"
+              src="/image/founder.png"
+
               width={400}
               height={450}
               className="rounded-t-lg"
@@ -27,10 +28,10 @@ export default function TeamSection() {
             </p>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+        <div className="bg-white rounded-lg shadow-lg h-full overflow-hidden transform transition-all hover:scale-105">
           <div className="relative">
             <Image
-              src="/image/manager.jpg"
+              src="/image/janet.png"
               width={400}
               height={550}
               className="rounded-t-lg"
@@ -38,18 +39,17 @@ export default function TeamSection() {
             />
           </div>
           <div className="p-6">
-            <h3 className="text-xl font-bold">Grounds Manager</h3>
+            <h3 className="text-xl font-bold">General Manager</h3>
             <p className="text-gray-600 mt-4">
-              Mr. Innocent oversees our Guest Relations Team and is ready to assist you with planning your next corporate,
-              church, or social event. He is the first point of contact for guests. He greets guests upon arrival, handles
-              check-ins and check-outs, and provides general information about the retreat center and its amenities.
+            Madam Janet oversees our Guest Relations Team and is ready to assist you with planning your next corporate, church, or social event. She is the first point of contact for guests. She greets guests upon arrival, handles check-ins and check-outs, and provides general information 
+            about the retreat center and its amenities. 
             </p>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105">
+        <div className="bg-white rounded-lg shadow-lg h-full overflow-hidden transform transition-all hover:scale-105">
           <div className="relative">
             <Image
-              src="/image/staff.jpg"
+              src="/image/service.png"
               width={400}
               height={550}
               className="rounded-t-lg"
