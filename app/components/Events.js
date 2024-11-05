@@ -9,7 +9,7 @@ export default function EventPage() {
       <div className="flex flex-wrap justify-center items-center">
        
         <div className="w-full md:w-1/2 pl-10 py-10">
-          <h2 className="text-4xl font-bold leading-tight text-orange-600">Host Your Next Event at New Mercies Retreat Center</h2>
+          <h2 className="text-4xl font-bold leading-tight text-orange-600">Host Your Next Event at New Mercies Christian Retreat Center</h2>
           <p className="text-gray-600 mt-6">
             New Mercies Retreat Center is a beautiful and serene setting for your next event. We offer a variety of spaces that can accommodate a variety of events, from small gatherings to large conferences. We also have a team of experienced staff who can help you plan and execute your event.
          </p>
