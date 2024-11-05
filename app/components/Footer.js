@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-orange-600 text-white py-11">
       <div className="container mx-auto px-8 md:flex justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
-          <h3 className="font-bold text-2xl mb-2 pt-4">New Mercies Retreat Center</h3>
+          <h3 className="font-bold text-2xl mb-2 pt-4">New Mercies Christian Retreat Center</h3>
           <p className="mb-1">Nmai Dzorn Papafio Hills Rd, Ghana</p>
           <p>+233(0)256489960</p>
         </div>
@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-white mt-4 pt-4 container mx-auto px-8 md:flex justify-between items-center">
         <div className="text-center md:text-left">
-          <p className="text-sm">&copy; {new Date().getFullYear()} New Mercies Retreat Center. All rights reserved.</p>
+          <p className="text-sm">&copy; {new Date().getFullYear()} New Mercies Christian Retreat Center. All rights reserved.</p>
         </div>
         <div className="mt-4 md:mt-0 text-center md:text-right space-x-4">
           <a href="#" className="text-white hover:text-orange-400 text-sm">Terms of Service</a>
