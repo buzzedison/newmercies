@@ -6,28 +6,28 @@ export default function ConferenceRooms() {
   const rooms = [
     {
       name: "Conference Room 1 (1st Floor)",
-      price: "GHc 1000 (3hrs) GHc 1800 (6hrs)",
+
       description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
       image: "/image/Conference1st room.jpeg"
     },
     {
       name: "Conference Room 2 (Second Floor)",
-      price: "GHc 1000 (3hrs) GHc 1800 (6hrs)",
+   
       description: "This small, intimate space is designed to serve various purposes and can accommodate about 50 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera"],
       image: "/image/Conferenceroomsecond.jpeg"
     },
     {
       name: "Conference Room 1 (Ground Floor)",
-      price: "GHc 1500 (3hrs) GHc 2500 (6hrs)",
+  
       description: "This larger space is perfect for larger gatherings and can accommodate about 80 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector"],
       image: "/image/Conference1st room.jpeg"
     },
     {
       name: "Conference Room 2 (Ground Floor)",
-      price: "GHc 2000 (3hrs) GHc 3000 (6hrs)",
+    
       description: "Our largest space, ideal for events and presentations, can accommodate about 100 people.",
       features: ["Seating is provided", "Air-conditioning units", "Generator backup", "CCTV Camera", "Projector", "PA System"],
       image: "/image/Conferenceroomsecond.jpeg"
@@ -76,8 +76,7 @@ export default function ConferenceRooms() {
              </div>
              <div className="flex justify-between items-center mt-6">
                <div className="flex items-center">
-                 <span className="text-lg text-gray-700 mr-2">Price:</span>
-                 <span className="text-xl font-bold">{room.price}</span>
+               
                </div>
                <button className="px-5 py-3 text-white bg-orange-500 hover:bg-orange-600 rounded-lg shadow-md transition-colors duration-300">
                  Book Now
